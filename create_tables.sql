@@ -13,12 +13,11 @@ CREATE TABLE IF NOT EXISTS `prospects` (
   `inserted_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-COMMIT;
 
 CREATE TABLE `prospects_future_grades` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `prospect_id` int(10) NOT NULL,
   `grade` int(2) NOT NULL,
   `label` varchar(5) NOT NULL,
-  PRIMARY KEY (`id`);
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
